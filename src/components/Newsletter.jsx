@@ -1,3 +1,4 @@
+import { Send } from "@material-ui/icons";
 import React from "react";
 
 function Newsletter() {
@@ -10,11 +11,12 @@ function Newsletter() {
       <div className="flex mt-[3rem] items-center justify-between min-w-[30rem] min-h-[2rem] bg-white border-[#cccccc] rounded-[5px] overflow-hidden">
         <input
           className="border-none pl-[20px] flex-[7] outline-none"
-          type="text"
+          type="email"
           placeholder="email"
-          className=""
         />
-        <button>Send</button>
+        <button className="bg-[#4caf50] flex-1 h-[100%]">
+          <Send className="text-white " />
+        </button>
       </div>
     </div>
   );
