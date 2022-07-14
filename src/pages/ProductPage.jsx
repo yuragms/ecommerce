@@ -1,5 +1,6 @@
 import React from "react";
 import Announce from "../components/Announce";
+import Counter from "../components/Counter";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
@@ -31,13 +32,13 @@ function ProductPage() {
           <div className="flex text-2xl mt-7">
             {/* color variants */}
             Colors
-            <div className="bg-red-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5"></div>
-            <div className="bg-blue-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5"></div>
-            <div className="bg-yellow-400 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5"></div>
+            <div className="bg-red-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5 hover:border-[#8a4af3]"></div>
+            <div className="bg-blue-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5 hover:border-[#8a4af3]"></div>
+            <div className="bg-yellow-400 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5 hover:border-[#8a4af3]"></div>
           </div>
           <div className="mt-7 text-2xl">
             Size
-            <select className="ml-5">
+            <select className="ml-5 border-2">
               <option selected disabled>
                 Select
               </option>
@@ -46,6 +47,10 @@ function ProductPage() {
               <option>Large</option>
             </select>
           </div>
+          <div className="mt-5">
+            <Counter />
+          </div>
+          <button className="btn mt-5">Add to cart</button>
         </div>
       </div>
       <Newsletter />
