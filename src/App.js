@@ -3,6 +3,7 @@ import CategoryPage from "./pages/CategoryPage";
 import Home from "./pages/Home";
 import ProductPage from "./pages/ProductPage";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 function App() {
   return (
     <div className="App">
@@ -10,7 +11,8 @@ function App() {
       {/* <CategoryPage /> */}
       {/* <ProductPage /> */}
       {/* <Cart /> */}
-      <Login />
+      {/* <Login /> */}
+      <Register />
     </div>
   );
 }
