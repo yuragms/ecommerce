@@ -29,7 +29,7 @@ function Slider() {
   };
 
   return (
-    <div className="parentDiv h-[540px] bg-white flex items-center justify-between">
+    <div className="parentDiv h-[540px] bg-white flex items-center justify-between mobile:hidden">
       {/* leftarrow div */}
       <div className={arrowStyle}>
         <ArrowLeftOutlined style={{ fontSize: "50px" }} onClick={prvSlide} />
