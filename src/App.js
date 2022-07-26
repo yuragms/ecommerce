@@ -7,11 +7,11 @@ import Register from "./pages/Register";
 function App() {
   return (
     <div className="App">
-      {/* <Home /> */}
+      <Home />
       {/* <CategoryPage /> */}
       {/* <ProductPage /> */}
       {/* <Cart /> */}
-      <Login />
+      {/* <Login /> */}
       {/* <Register /> */}
     </div>
   );
